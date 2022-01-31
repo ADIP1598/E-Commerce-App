@@ -1,0 +1,281 @@
+{
+  "users": [
+    {
+      "fullName": "Super Admin",
+      "userName": "admin",
+      "email": "admin@mail.com",
+      "password": "password",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "fullName": "Ahmad Dhiya",
+      "userName": "dhiya",
+      "email": "dhiya@mail.com",
+      "password": "password",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "fullName": "Michael Townley",
+      "userName": "michael",
+      "email": "michael@mail.com",
+      "password": "password",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "fullName": "Franklin Clinton",
+      "userName": "franklin",
+      "email": "franklin@mail.com",
+      "password": "password",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "fullName": "Trevor Philips",
+      "userName": "trevor",
+      "email": "trevor@mail.com",
+      "password": "password",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "fullName": "Carl Johnson",
+      "userName": "carl",
+      "email": "carl@mail.com",
+      "password": "password",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "fullName": "Spongebob Squarepants",
+      "userName": "spongebob",
+      "email": "spongebob@mail.com",
+      "password": "password",
+      "role": "user",
+      "id": 7
+    }
+  ],
+  "transactions": [],
+  "products": [
+    {
+      "id": 1,
+      "productName": "Intel Core i9 12900K",
+      "price": 10000000,
+      "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/1/6ff6d76b-61f9-4db8-90c5-d8fce637d653.jpg",
+      "description": "Ini CPU",
+      "category": "cpu",
+      "brand": "intel"
+    },
+    {
+      "id": 2,
+      "productName": "Intel Core i7 12700K",
+      "price": 7000000,
+      "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/1/51be2f68-44a9-461e-af94-e8b0bbc33a66.jpg",
+      "description": "Ini CPU",
+      "category": "cpu",
+      "brand": "intel"
+    },
+    {
+      "id": 3,
+      "productName": "Intel Core i5 12600K",
+      "price": 4800000,
+      "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/1/a6958227-777a-4149-b75c-5c8fd1603431.jpg",
+      "description": "Ini CPU",
+      "category": "cpu",
+      "brand": "intel"
+    },
+    {
+      "id": 4,
+      "productName": "Intel Core i5 12400",
+      "price": 3300000,
+      "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/5/bf260601-17d5-47bc-bc8b-d43bfdfcf835.jpg",
+      "description": "Ini CPU",
+      "category": "cpu",
+      "brand": "intel"
+    },
+    {
+      "id": 5,
+      "productName": "AMD Ryzen 9 5950X",
+      "price": 12600000,
+      "productImage": "https://www.amd.com/system/files/styles/992px/private/2020-09/616656-amd-ryzen-9-5000-series-PIB-1260x709_0.png?itok=flFMuxbT",
+      "description": "Ini CPU",
+      "category": "cpu",
+      "brand": "amd"
+    },
+    {
+      "id": 6,
+      "productName": "AMD Ryzen 7 5800X",
+      "price": 6500000,
+      "productImage": "https://www.amd.com/system/files/styles/992px/private/2020-09/616656-amd-ryzen-7-5000-series-PIB-1260x709_0.png?itok=AeRSJIGY",
+      "description": "Ini CPU",
+      "category": "cpu",
+      "brand": "amd"
+    },
+    {
+      "id": 7,
+      "productName": "AMD Ryzen 5 5600X",
+      "price": 4600000,
+      "productImage": "https://www.amd.com/system/files/styles/992px/private/2020-09/616656-amd-ryzen-5-5000-series-PIB-fan-1260x709.png?itok=m1h1cfYf",
+      "description": "Ini CPU",
+      "category": "cpu",
+      "brand": "amd"
+    },
+    {
+      "id": 8,
+      "productName": "AMD Ryzen 5 5600G",
+      "price": 4000000,
+      "productImage": "https://www.amd.com/system/files/styles/992px/private/2020-09/616656-amd-ryzen-5-5000-series-PIB-fan-1260x709.png?itok=m1h1cfYf",
+      "description": "Ini CPU",
+      "category": "cpu",
+      "brand": "amd"
+    },
+    {
+      "id": 9,
+      "productName": "Asus ROG Strix Z690-E Gaming WiFi",
+      "price": 8000000,
+      "productImage": "https://dlcdnwebimgs.asus.com/gain/4A7DC4DD-E991-4006-9F59-9830BA0E22C1/w717/h525",
+      "description": "Ini Motherboard",
+      "category": "motherboard",
+      "brand": "asus"
+    },
+    {
+      "id": 10,
+      "productName": "Asus ROG STRIX X570-I Gaming",
+      "price": 8000000,
+      "productImage": "https://dlcdnwebimgs.asus.com/gain/565563A3-359E-4E80-BF7A-6FC1B2079469/w717/h525",
+      "description": "Ini Motherboard",
+      "category": "motherboard",
+      "brand": "asus"
+    },
+    {
+      "id": 11,
+      "productName": "MSI MAG Z690 Torpedo",
+      "price": 5000000,
+      "productImage": "https://asset.msi.com/resize/image/global/product/product_1635326575cadd7f31a79849ea525a4304e2d3632f.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+      "description": "Ini Motherboard",
+      "category": "motherboard",
+      "brand": "msi"
+    },
+    {
+      "id": 12,
+      "productName": "MSI X570-A Pro",
+      "price": 4000000,
+      "productImage": "https://asset.msi.com/resize/image/global/product/product_10_20190705101438_5d1eb28e858fb.png62405b38c58fe0f07fcef2367d8a9ba1/600.png",
+      "description": "Ini Motherboard",
+      "category": "motherboard",
+      "brand": "msi"
+    },
+    {
+      "id": 13,
+      "productName": "Corsair DDR5 Vengeance PC44800 32GB",
+      "price": 6200000,
+      "productImage": "https://www.corsair.com/medias/sys_master/images/images/h8e/he5/9944523210782/CMK32GX5M2B5600C36/Gallery/VENGEANCE_DDR5_BLK_01/-CMK32GX5M2B5600C36-Gallery-VENGEANCE-DDR5-BLK-01.png_1200Wx1200H",
+      "description": "Ini RAM",
+      "category": "ram",
+      "brand": "corsair"
+    },
+    {
+      "id": 14,
+      "productName": "Gskill DDR5 Trident Z5 PC48000 32GB",
+      "price": 6700000,
+      "productImage": "https://www.gskill.com/_upload/images/163582088710.png",
+      "description": "Ini RAM",
+      "category": "ram",
+      "brand": "gskill"
+    },
+    {
+      "id": 15,
+      "productName": "Samsung SSD 980 PRO M.2 PCIe Gen4 x4 1TB",
+      "price": 2000000,
+      "productImage": "https://image-us.samsung.com/SamsungUS/home/computing/memory-and-storage/solid-state-drives/pdp/mz-v8p/1t0b-am/gallery/MZ-V8P1T0BW_001_Front_Black.jpg?$product-details-blur-jpg$",
+      "description": "Ini SSD",
+      "category": "ssd",
+      "brand": "samsung"
+    },
+    {
+      "id": 16,
+      "productName": "Seagate SSD 4TB NAS - IronWolf Pro 125 Series",
+      "price": 11400000,
+      "productImage": "https://www.seagate.com/www-content/products/nas-drives/ironwolf-ssd/_shared/images/Ironwolf-125-ssd-front_l.png",
+      "description": "Ini SSD",
+      "category": "ssd",
+      "brand": "seagate"
+    },
+    {
+      "id": 17,
+      "productName": "Asus Geforce RTX 3090 24GB GDDR6X - ROG Strix OC",
+      "price": 47000000,
+      "productImage": "https://dlcdnwebimgs.asus.com/gain/153F4287-4A13-4375-BCD0-FB3AF81E6453/w717/h525",
+      "description": "Ini VGA",
+      "category": "vga",
+      "brand": "asus"
+    },
+    {
+      "id": 18,
+      "productName": "Asus Radeon RX 6900 XT 16GB GDDR6 ROG Strix LC TOP OC",
+      "price": 46000000,
+      "productImage": "https://dlcdnwebimgs.asus.com/gain/7BFA47D7-C903-47AB-B983-AD101E1F015A/w717/h525",
+      "description": "Ini VGA",
+      "category": "vga",
+      "brand": "asus"
+    },
+    {
+      "id": 19,
+      "productName": "Corsair HX Series 1200W Full Modular - Platinum",
+      "price": 4300000,
+      "productImage": "https://www.corsair.com/medias/sys_master/images/images/h6f/h4d/9110773497886/-CP-9020140-NA-Gallery-HX1200-01.png",
+      "description": "Ini PSU",
+      "category": "psu",
+      "brand": "corsair"
+    },
+    {
+      "id": 20,
+      "productName": "Corsair RMX Series 850W Full Modular - Silver",
+      "price": 2500000,
+      "productImage": "https://www.corsair.com/medias/sys_master/images/images/h61/hc6/9112034574366/-CP-9020180-NA-Gallery-RM850x-PSU-01.png",
+      "description": "Ini PSU",
+      "category": "psu",
+      "brand": "corsair"
+    }
+  ],
+  "carts": [
+    {
+      "userId": 1,
+      "productId": 3,
+      "price": 4800000,
+      "productName": "Intel Core i5 12600K",
+      "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/1/a6958227-777a-4149-b75c-5c8fd1603431.jpg",
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "productId": 6,
+      "price": 6500000,
+      "productName": "AMD Ryzen 7 5800X",
+      "productImage": "https://www.amd.com/system/files/styles/992px/private/2020-09/616656-amd-ryzen-7-5000-series-PIB-1260x709_0.png?itok=AeRSJIGY",
+      "quantity": 1,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "productId": 16,
+      "price": 11400000,
+      "productName": "Seagate SSD 4TB NAS - IronWolf Pro 125 Series",
+      "productImage": "https://www.seagate.com/www-content/products/nas-drives/ironwolf-ssd/_shared/images/Ironwolf-125-ssd-front_l.png",
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "productId": 19,
+      "price": 4300000,
+      "productName": "Corsair HX Series 1200W Full Modular - Platinum",
+      "productImage": "https://www.corsair.com/medias/sys_master/images/images/h6f/h4d/9110773497886/-CP-9020140-NA-Gallery-HX1200-01.png",
+      "quantity": 1,
+      "id": 6
+    }
+  ]
+}
