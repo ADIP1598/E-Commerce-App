@@ -1,106 +1,117 @@
 import React from "react";
 import Axios from 'axios';
 import { API_URL } from "../constants/API";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useState } from "react";
 
-class History extends React.Component {
-    state = {
-        transactionList: [],
-    }
+const History = () => {
+    const userGlobal = useSelector((state) => state.user)
+    const [transactions, setTransactions] = useState([])
+    const [seeDetailsBtnHandler, setSeeDetailsBtnHandler] = useState(false)
 
-
-    fetchTransaction = () => {
+    const fetchTransaction = () => {
         Axios.get(`${API_URL}/transactions`, {
             params: {
-                userId: this.props.userGlobal.id
+                userId: userGlobal.id
             }
         })
             .then((result) => {
-                this.setState({ transactionList: result.data })
+                setTransactions(result.data)
             })
             .catch(() => {
-                alert("Terjadi kesalahan di server")
+                alert("Server Error (History.jsx)")
             })
     }
 
-    seeDetailsBtnHandler = (transactionDetails) => {
-        this.setState({ transactionDetails })
+    const detailsBtnHandler = () => {
+        setSeeDetailsBtnHandler(true)
     }
 
-    renderTransactions = () => {
-        return this.state.transactionList.map(val => {
+    const renderTransactions = () => {
+        return transactions.map((transaction) => {
+            // console.log(transaction.transactionItems)
             return (
                 <tr>
-                    <td>{val.transactionDate}</td>
-                    <td>{val.transactionItems.lengtd} Item(s)</td>
-                    <td>Rp{val.totalPrice}</td>
+                    <td>{transaction.transactionDate}</td>
+                    <td>{transaction.transactionItems.length} Item(s)</td>
+                    <td>Rp{transaction.totalPrice.toLocaleString("id-ID")}</td>
                     <td>
-                        <button onClick={() => this.seeDetailsBtnHandler(val.transactionItems)} className="btn btn-info"></button>
+                        <button onClick={() => detailsBtnHandler(transaction.transactionItems)} className="btn btn-warning">See details</button>
                     </td>
                 </tr>
             )
         })
     }
 
-    renderTransactionsDetailItems = () => {
-        return this.state.transactionDetails.map(val => {
+    // const renderTransactionsDetail = () => {
+    //     console.log(transactions)
+    //     transactions.map((transaction) => {
+    //         console.log(transaction.transactionItems)
+    //         transaction.transactionItems.map((transactionDetail) => {
+    //             console.log(transactionDetail.productName)
+    //             return (
+    //                 <div className="d-flex my-2 flex-row justify-content-between align-items-center">
+    //                     <span className="font-weight-bold">{transactionDetail.productName} {transactionDetail.quantity}</span>
+    //                     <span>Rp{transactionDetail.price * transactionDetail.quantity}</span>
+    //                 </div>
+    //             )
+    //         })
+    //     })
+    // }
+    const renderTransactionsDetail = () => {
+        console.log(transactions[0].transactionItems)
+        transactions.map((transaction) => {
+            console.log(transaction.transactionItems)
             return (
                 <div className="d-flex my-2 flex-row justify-content-between align-items-center">
-                    <span className="font-weight-bold">{val.productName} (val.quantity)</span>
-                    <span>Rp{val.price * val.quantity}</span>
+                    <span className="font-weight-bold">{transaction.productName} {transaction.quantity}</span>
+                    <span>Rp{transaction.price * transaction.quantity}</span>
                 </div>
             )
         })
     }
 
-    componentDidMount() {
-        this.fetchTransaction();
-    }
+    useEffect(() => {
+        fetchTransaction()
+    }, [])
 
-    render() {
-        return (
-            <div className="p-5">
-                <h1>Transaction History</h1>
-                <div className="row mt-5">
-                    <div className="col-8">
-                        <table className="table">
-                            <thead className="thead-light">
-                                <tr>
-                                    <th>Transaction Date</th>
-                                    <th>Total Items</th>
-                                    <th>Total Price</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {this.renderTransactions}
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className="col-4">
-                        {
-                            this.state.transactionDetails.length ?
-                                <div className="card">
-                                    <div className="card-header">
-                                        <strong>Transaction Details</strong>
-                                    </div>
-                                    <div className="card-body">
-                                        {this.renderTransactionsDetailItems()}
-                                    </div>
+    return (
+        <div className="p-5">
+            <h1>Transaction History</h1>
+            <div className="row mt-5">
+                <div className="col-8">
+                    <table className="table">
+                        <thead className="thead-light">
+                            <tr>
+                                <th>Transaction Date</th>
+                                <th>Total Items</th>
+                                <th>Total Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {renderTransactions()}
+                        </tbody>
+                    </table>
+                </div>
+                <div className="col-4">
+                    {
+                        seeDetailsBtnHandler ?
+                            <div className="card">
+                                <div className="card-header">
+                                    <strong>Transaction Details</strong>
                                 </div>
-                                : null
-                        }
-                    </div>
+                                <div className="card-body">
+                                    {renderTransactionsDetail()}
+                                </div>
+                            </div>
+                            : null
+                    }
                 </div>
             </div>
-        );
-    }
-}
+        </div>
+    )
+};
 
-const mapStateToProps = state => {
-    return {
-        userGlobal: state.user
-    }
-}
-
-// export default connect(mapStateToProps)(History);
 export default History;

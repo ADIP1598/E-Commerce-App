@@ -57,7 +57,131 @@
       "id": 7
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "userId": 1,
+      "address": "Pertamina",
+      "recipientName": "Poro",
+      "totalPrice": 29700000,
+      "totalPayment": 30000000,
+      "transactionDate": "1-1-2022",
+      "transactionItems": [
+        {
+          "userId": 1,
+          "productId": 3,
+          "price": 4800000,
+          "productName": "Intel Core i5 12600K",
+          "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/1/a6958227-777a-4149-b75c-5c8fd1603431.jpg",
+          "quantity": 1,
+          "id": 3
+        },
+        {
+          "userId": 1,
+          "productId": 6,
+          "price": 6500000,
+          "productName": "AMD Ryzen 7 5800X",
+          "productImage": "https://www.amd.com/system/files/styles/992px/private/2020-09/616656-amd-ryzen-7-5000-series-PIB-1260x709_0.png?itok=AeRSJIGY",
+          "quantity": 1,
+          "id": 4
+        },
+        {
+          "userId": 1,
+          "productId": 16,
+          "price": 11400000,
+          "productName": "Seagate SSD 4TB NAS - IronWolf Pro 125 Series",
+          "productImage": "https://www.seagate.com/www-content/products/nas-drives/ironwolf-ssd/_shared/images/Ironwolf-125-ssd-front_l.png",
+          "quantity": 1,
+          "id": 5
+        },
+        {
+          "userId": 1,
+          "productId": 19,
+          "price": 4300000,
+          "productName": "Corsair HX Series 1200W Full Modular - Platinum",
+          "productImage": "https://www.corsair.com/medias/sys_master/images/images/h6f/h4d/9110773497886/-CP-9020140-NA-Gallery-HX1200-01.png",
+          "quantity": 1,
+          "id": 6
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "address": "Emerald",
+      "recipientName": "ADIP",
+      "totalPrice": 17930000,
+      "totalPayment": 1793000000,
+      "transactionDate": "1-1-2022",
+      "transactionItems": [
+        {
+          "userId": 1,
+          "productId": 19,
+          "price": 4300000,
+          "productName": "Corsair HX Series 1200W Full Modular - Platinum",
+          "productImage": "https://www.corsair.com/medias/sys_master/images/images/h6f/h4d/9110773497886/-CP-9020140-NA-Gallery-HX1200-01.png",
+          "quantity": 1,
+          "id": 1
+        },
+        {
+          "userId": 1,
+          "productId": "20",
+          "price": 2500000,
+          "productName": "Corsair RMX Series 850W Full Modular - Silver",
+          "productImage": "https://www.corsair.com/medias/sys_master/images/images/h61/hc6/9112034574366/-CP-9020180-NA-Gallery-RM850x-PSU-01.png",
+          "quantity": 2,
+          "id": 2
+        },
+        {
+          "userId": 1,
+          "productId": 2,
+          "price": 7000000,
+          "productName": "Intel Core i7 12700K",
+          "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/1/51be2f68-44a9-461e-af94-e8b0bbc33a66.jpg",
+          "quantity": 1,
+          "id": 3
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "address": "",
+      "recipientName": "",
+      "totalPrice": 25850000,
+      "totalPayment": 260000000,
+      "transactionDate": "1-1-2022",
+      "transactionItems": [
+        {
+          "userId": 1,
+          "productId": 1,
+          "price": 10000000,
+          "productName": "Intel Core i9 12900K",
+          "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/1/6ff6d76b-61f9-4db8-90c5-d8fce637d653.jpg",
+          "quantity": 1,
+          "id": 1
+        },
+        {
+          "userId": 1,
+          "productId": 2,
+          "price": 7000000,
+          "productName": "Intel Core i7 12700K",
+          "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/1/51be2f68-44a9-461e-af94-e8b0bbc33a66.jpg",
+          "quantity": 1,
+          "id": 2
+        },
+        {
+          "userId": 1,
+          "productId": 6,
+          "price": 6500000,
+          "productName": "AMD Ryzen 7 5800X",
+          "productImage": "https://www.amd.com/system/files/styles/992px/private/2020-09/616656-amd-ryzen-7-5000-series-PIB-1260x709_0.png?itok=AeRSJIGY",
+          "quantity": 1,
+          "id": 3
+        }
+      ],
+      "id": 3
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -240,42 +364,5 @@
       "brand": "corsair"
     }
   ],
-  "carts": [
-    {
-      "userId": 1,
-      "productId": 3,
-      "price": 4800000,
-      "productName": "Intel Core i5 12600K",
-      "productImage": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/1/a6958227-777a-4149-b75c-5c8fd1603431.jpg",
-      "quantity": 1,
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "productId": 6,
-      "price": 6500000,
-      "productName": "AMD Ryzen 7 5800X",
-      "productImage": "https://www.amd.com/system/files/styles/992px/private/2020-09/616656-amd-ryzen-7-5000-series-PIB-1260x709_0.png?itok=AeRSJIGY",
-      "quantity": 1,
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "productId": 16,
-      "price": 11400000,
-      "productName": "Seagate SSD 4TB NAS - IronWolf Pro 125 Series",
-      "productImage": "https://www.seagate.com/www-content/products/nas-drives/ironwolf-ssd/_shared/images/Ironwolf-125-ssd-front_l.png",
-      "quantity": 1,
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "productId": 19,
-      "price": 4300000,
-      "productName": "Corsair HX Series 1200W Full Modular - Platinum",
-      "productImage": "https://www.corsair.com/medias/sys_master/images/images/h6f/h4d/9110773497886/-CP-9020140-NA-Gallery-HX1200-01.png",
-      "quantity": 1,
-      "id": 6
-    }
-  ]
+  "carts": []
 }
