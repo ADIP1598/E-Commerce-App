@@ -8,6 +8,7 @@ import { useState } from "react";
 const History = () => {
     const userGlobal = useSelector((state) => state.user)
     const [transactions, setTransactions] = useState([])
+    const [currentTransaction, setCurrentTransaction] = useState([])
     const [seeDetailsBtnHandler, setSeeDetailsBtnHandler] = useState(false)
 
     const fetchTransaction = () => {
@@ -24,8 +25,10 @@ const History = () => {
             })
     }
 
-    const detailsBtnHandler = () => {
+    const detailsBtnHandler = (selectedTransaction) => {
+        console.log(selectedTransaction)
         setSeeDetailsBtnHandler(true)
+        setCurrentTransaction(selectedTransaction)
     }
 
     const renderTransactions = () => {
@@ -43,26 +46,9 @@ const History = () => {
             )
         })
     }
-
-    // const renderTransactionsDetail = () => {
-    //     console.log(transactions)
-    //     transactions.map((transaction) => {
-    //         console.log(transaction.transactionItems)
-    //         transaction.transactionItems.map((transactionDetail) => {
-    //             console.log(transactionDetail.productName)
-    //             return (
-    //                 <div className="d-flex my-2 flex-row justify-content-between align-items-center">
-    //                     <span className="font-weight-bold">{transactionDetail.productName} {transactionDetail.quantity}</span>
-    //                     <span>Rp{transactionDetail.price * transactionDetail.quantity}</span>
-    //                 </div>
-    //             )
-    //         })
-    //     })
-    // }
     const renderTransactionsDetail = () => {
-        console.log(transactions[0].transactionItems)
-        transactions.map((transaction) => {
-            console.log(transaction.transactionItems)
+        // console.log(transactions)
+        return currentTransaction.map((transaction) => {
             return (
                 <div className="d-flex my-2 flex-row justify-content-between align-items-center">
                     <span className="font-weight-bold">{transaction.productName} {transaction.quantity}</span>
